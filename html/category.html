@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>ROBOTS BLOG</title>
+
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+
+
+
+  </head>
+  <body id="body">
+  <!-- Header -->    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">ROBOTS BLOG</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Shop</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Posts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Games</a>
+          <a class="dropdown-item" href="#">Programming</a>
+          <a class="dropdown-item" href="#">Technical reviews</a>
+          <a class="dropdown-item" href="#">Game reviews</a>
+
+        </div>
+      </li>
+         <li class="nav-item">
+        <button type="button" class="btn btn-success">Sign Up</button>
+        <button type="button" class="btn btn-outline-success">Sign In</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+ 
+<div class="slider">
+    <div class="item">
+        <img src="images/1.jpg" alt="Первый слайд">
+        <div class="slideText">THE LAST OF US PART 2</div>
+    </div>
+
+    <div class="item">
+        <img src="images/2.jpg" alt="Второй слайд">
+        <div class="slideText">CYBERPUNK 2077</div>
+    </div>
+
+    <div class="item">
+        <img src="images/3.jpg" alt="Третий слайд">
+        <div class="slideText">TECHNICAL REVIEWS</div>
+    </div>
+
+    <a class="prev" onclick="minusSlide()">&#10094;</a>
+    <a class="next" onclick="plusSlide()">&#10095;</a>
+</div>
+
+<div class="slider-dots col-sm-12">
+    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+</div>
+
+<!-- sidebar-->
+<div class="containe-fludid">
+  <div class="row">
+    <div class="col-sm-3" style="color: white; font-size: 20px; box-shadow: 2px 0px 0px #f25">
+      <h3 class="col-sm-12"> Category</h3>
+        <p class="col-sm-12">Choose what you want...</p>
+          <ul class="nav nav-pi lls flex-column" >
+            <li class="nav-item">
+              <a href="" class="nav-link activve" style="color: yellow; text-shadow: 2px 2px 2px black; font-size: 22px;">New posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" style="color: red ;text-shadow: 2px 2px 2px black;">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" style="color: white;">Old posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://test.ua/frontend/html/category.html" class="nav-link" style="color: white;">Games</a>
+            </li>
+             <li class="nav-item">
+              <a href="" class="nav-link" style="color: white;">Programming</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" style="color: white;">Technical reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" style="color: white;">Game reviews</a>
+            </li>
+          </ul>
+    <br>
+  <h2 class="col-sm-12">Last Post</h2>
+ <br>
+  <div class="conteiner" style="box-shadow: -2px 3px 24px #42D; padding-left: 1px;">
+  <br>
+  <a href="http://test.ua/frontend/html/post%20_page.html" class="nav-link" style="color: white;">
+  <img src="images/5.jpg" class="col-sm-12" >
+  <p class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quaerat praesentium eos cum ut cupiditate necessitatibus laudantium tempore consequatur delectus! Eligendi ipsum dolor, numquam sapiente recusandae quidem totam odio doloribus.</p>
+
+    <button type="button" class="btn btn-info">Read more</button></a>
+  </div>
+
+
+<!--main -->
+</div>
+
+      <div class="col-sm-9" style="color: white; font-size: 20px; box-shadow: -2px 0px 0px #f25 ">
+      <main>
+    
+         
+        <div class="br">
+          <h1 style="color: yellow; font-size: 53px;">New posts</h1>
+          <br>
+          <div class="container-fluid">
+          <ul class="nav nav-pi lls flex-column">
+            <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/2.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/3.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+            
+
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/4.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/5.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+
+            </ul>
+            <br><br>
+            <h1 style="color: yellow; font-size: 53px;">Popular</h1>
+            <div class="container-fluid">
+            <ul class="nav nav-pi lls flex-column">
+              <br>
+               <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/6.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/7.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/1.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+
+              </ul>
+            <br><br>
+            <h1 style="color: yellow; font-size: 53px;">Old posts</h1>
+            <div class="container-fluid">
+            <ul class="nav nav-pi lls flex-column">
+              <br>
+               <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/2.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/4.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/6.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+
+              </ul>
+            <br><br>
+            <h1 style="color: yellow; font-size: 53px;">Games</h1>
+            <div class="container-fluid">
+            <ul class="nav nav-pi lls flex-column">
+              <br>
+               <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/3.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/1.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/5.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+            
+              </ul>
+            <br><br>
+            <h1 style="color: yellow; font-size: 53px;">Programming</h1>
+            <div class="container-fluid">
+            <ul class="nav nav-pi lls flex-column">
+              <br>
+               <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/3.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/1.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/5.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+
+            
+               </ul>
+            <br><br>
+            <h1 style="color: yellow; font-size: 53px;">Technical reviews</h1>
+            <div class="container-fluid">
+            <ul class="nav nav-pi lls flex-column">
+              <br>
+               <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/6.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/7.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/2.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+              
+               </ul>
+            <br><br>
+            <h1 style="color: yellow; font-size: 53px;">Game reviews</h1>
+            <div class="container-fluid">
+            <ul class="nav nav-pi lls flex-column">
+              <br>
+               <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/3.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/5.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>
+             <li class="nav-item">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="row" >
+              <img src="images/7.jpg" class="col-sm-6 ">
+              <div class="col-sm-5 ">
+                <a href="" style="color: white; text-decoration: none;">
+                <p>Some text..</p>
+                <h5 class="col-sm-12">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam explicabo, exercitationem nam quos consectetur! Quam voluptate quia eum rerum, ipsa beatae? Vero repudiandae iste in quibusdam dignissimos impedit, culpa sapiente!</h5>
+
+                <button type="button" class="btn btn-info">Read more</button></a>
+
+              </div>
+            </div>
+            </li>  
+
+          </div>
+          </div>
+        </div>
+        
+          
+          
+      </main>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center" style="margin-bottom: 0px; background: #0c2c26; color: white;">
+  <!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contacts</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">068-54-35-235</a>
+          </li>
+          <li>
+            <a href="#!">support@robotsblog.com</a>
+          </li>
+          <li>
+            <a href="#!">Privisy police</a>
+          </li>
+          <li>
+            <a href="#!">Simple page</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Advertise</a>
+          </li>
+          <li>
+            <a href="#!">RSS</a>
+          </li>
+          <li>
+            <a href="#!">API</a>
+          </li>
+          <li>
+            <a href="#!">Report violations</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Interested links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Shop</a>
+          </li>
+          <li>
+            <a href="#!">About us</a>
+          </li>
+          <li>
+            <a href="#!">
+Сooperation</a>
+          </li>
+          <li>
+            <a href="#!">Your 
+rights on site</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+we are in social pages</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Instagram</a>
+          </li>
+          <li>
+            <a href="#!">Facebook</a>
+          </li>
+          <li>
+            <a href="#!">Twitter</a>
+          </li>
+          <li>
+            <a href="#!">Linke din</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="test.ua">ROBOTS BLOG</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+    <script type="text/javascript" src="js/js1.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
